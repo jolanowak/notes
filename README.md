@@ -1,4 +1,4 @@
-Nazwa Projektu
+Nazwa Projektu <br>
 Rodzinny Spis Obowiązków
 Opis
 Prosta aplikacja do zarządzania listą obowiązków rodzinnych. Umożliwia dodawanie, edytowanie, usuwanie notatek, a także logowanie i rejestrację użytkowników.
