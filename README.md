@@ -8,13 +8,14 @@ Node.js <br>
 Express.js <br>
 MongoDB <br>
 CSS <br>
+Bootstrap<br>
+![1](https://github.com/jolanowak/notes/assets/122167686/e21cea35-7256-48dc-a0d9-cd7aa4f7f290)<br>
+![4](https://github.com/jolanowak/notes/assets/122167686/a60313f0-310a-4e75-abc2-69c06d819bdd)<br>
+![3](https://github.com/jolanowak/notes/assets/122167686/eb8948ff-7d54-4d15-b681-aa0c005b5910)<br>
+![2](https://github.com/jolanowak/notes/assets/122167686/8e1a64dd-b1a6-4344-9f18-79082e9f1230)<br>
 
 
 
-![logowanie](https://github.com/jolanowak/notes/assets/122167686/19d8298f-dd43-4cc9-a629-819d952d52b1) <br>
-![edit](https://github.com/jolanowak/notes/assets/122167686/079fa92a-fa05-4cb8-8a62-4f6e0fd785db) <br>
-![nota](https://github.com/jolanowak/notes/assets/122167686/70944a43-2308-49f8-89ff-e2b70c9ca91b)<br>
-![update](https://github.com/jolanowak/notes/assets/122167686/c954ec2e-73b4-4062-9d25-df2c4c2320d3)<br>
 
 Technologie <br>
 React <br>
