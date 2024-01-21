@@ -2,6 +2,7 @@ Nazwa Projektu <br>
 Rodzinny Spis Obowiązków <br>
 Opis <br>
 Prosta aplikacja do zarządzania listą obowiązków rodzinnych. Umożliwia dodawanie, edytowanie, usuwanie notatek, a także logowanie i rejestrację użytkowników. Łączy się z bazą danych MongoDB i zawiera CRUDa <br>
+Interfejs graficzny został zmodyfikowany za pomocą Bootstrap i cssów<br>
 Wykonana przy użyciu: <br>
 React <br>
 Node.js <br>
@@ -9,6 +10,7 @@ Express.js <br>
 MongoDB <br>
 CSS <br>
 Bootstrap<br>
+<br>
 ![1](https://github.com/jolanowak/notes/assets/122167686/e21cea35-7256-48dc-a0d9-cd7aa4f7f290)<br>
 ![4](https://github.com/jolanowak/notes/assets/122167686/a60313f0-310a-4e75-abc2-69c06d819bdd)<br>
 ![3](https://github.com/jolanowak/notes/assets/122167686/eb8948ff-7d54-4d15-b681-aa0c005b5910)<br>
