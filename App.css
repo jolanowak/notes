@@ -1,22 +1,28 @@
-
-
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
+  background-color: rgb(247, 247, 247);
+  margin: 20px 0 0 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 100vh
 }
 
-.App {
-  text-align: left;
+.root {
+  width: 80%; 
+  margin: 0 auto; 
+}
+
+.login-container {
+  text-align: center;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto; 
 }
 
 h1 {
@@ -26,18 +32,19 @@ h1 {
 
 input {
   padding: 10px;
-  margin-right: 10px;
   margin-bottom: 10px;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 button {
   padding: 10px;
   cursor: pointer;
-  background-color: #4caf50;
-  color: #fff;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 100%; 
+  box-sizing: border-box;
+  margin-top: 10px; 
 }
 
 button:hover {
@@ -45,39 +52,19 @@ button:hover {
 }
 
 .note {
-  border: 2px solid #4caf50; 
-  border-radius: 5px;
-  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 15px;
+  padding: 15px;
   margin: 10px 0;
 }
 
-b {
-  color: #333;
-}
-
-input[type="text"] {
-  padding: 8px;
-  margin-right: 5px;
-}
 
 
-.editing-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 10px;
+.navbar-brand,
+.navbar-text,
+.navbar-nav {
+  color: black;
 }
 
-.editing-section input {
-  flex: 1;
-  margin-bottom: 10px;
-}
 
-.editing-section button {
-  background-color: #2196F3;
-  color: #fff;
-}
 
-.editing-section button:hover {
-  background-color: #0d8bf2;
-}

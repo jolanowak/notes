@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Container, Button } from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
@@ -40,11 +42,9 @@ class App extends Component {
       this.setState({ token: data.token });
       localStorage.setItem('token', data.token);
       this.refreshNotes();
-      
     } else {
       console.error('Błąd logowania');
     }
-    
   }
 
   async register() {
@@ -166,51 +166,77 @@ class App extends Component {
 
     return (
       <div className="App">
-        {token ? (
-          <>
-            <h1>Rodzinny spis obowiązków</h1>
-            <button onClick={() => this.logout()}>Logout</button>
-            <input id="newNotes" />&nbsp;
-            <button onClick={() => this.addClick()}>Add Notes</button>
-            <button onClick={() => this.displayNotes()}>Display Notes</button>
-            {notes.map((note, index) => (
-              <p key={index}>
-                {editNoteId === note.id ? (
-                  <>
-                    <input
-                      type="text"
-                      value={editedNoteDescription}
-                      onChange={(e) =>
-                        this.setState({ editedNoteDescription: e.target.value })
-                      }
-                    />
-                    <button onClick={() => this.saveEdit(note.id, editedNoteDescription)}>Save</button>
-                    <button onClick={() => this.cancelEditing()}>Cancel</button>
-                  </>
-                ) : (
-                  <>
-                    <b>* {note.description}</b>&nbsp;
-                    <button onClick={() => this.startEditing(note.id, note.description)}>
-                      Edit Notes
-                    </button>
-                    <button onClick={() => this.deleteClick(note.id)}>Delete Notes</button>
-                  </>
-                )}
-                <br />
-              </p>
-            ))}
-          </>
-        ) : (
-          <>
-            <h1>Login</h1>
-            <label htmlFor="usernameInput">Username:</label>
-            <input type="text" id="usernameInput" /><br />
-            <label htmlFor="passwordInput">Password:</label>
-            <input type="password" id="passwordInput" /><br />
-            <button onClick={() => this.login()}>Login</button>
-            <button onClick={() => this.register()}>Register</button>
-          </>
-        )}
+        <Navbar bg="light" variant="light">
+          <Container>
+            <Navbar.Brand href="#">Rodzinny spis obowiązków</Navbar.Brand>
+            {token && (
+              <Navbar.Collapse className="justify-content-end">
+                <Navbar.Text>
+                  <Button variant="outline-danger" onClick={() => this.logout()}>Logout</Button>
+                </Navbar.Text>
+              </Navbar.Collapse>
+            )}
+          </Container>
+        </Navbar>
+
+        <Container className="mt-3">
+          {token && (
+            <>
+              
+
+              <div className="editing-section">
+                <input id="newNotes" className="form-control" />
+                <Button variant="outline-success" onClick={() => this.addClick()}>Add Notes</Button>
+                <Button variant="outline-primary" onClick={() => this.displayNotes()}>Display Notes</Button>
+              </div>
+
+              {notes.map((note, index) => (
+                <div className="note" key={index}>
+                  {editNoteId === note.id ? (
+                    <>
+                      <input
+                        type="text"
+                        value={editedNoteDescription}
+                        onChange={(e) =>
+                          this.setState({ editedNoteDescription: e.target.value })
+                        }
+                        className="form-control"
+                      />
+                      <div className="editing-section">
+                        <Button variant="outline-primary" onClick={() => this.saveEdit(note.id, editedNoteDescription)}>Save</Button>
+                        <Button variant="outline-secondary" onClick={() => this.cancelEditing()}>Cancel</Button>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <b>* {note.description}</b>
+                      <div className="editing-section">
+                        <Button variant="outline-warning" onClick={() => this.startEditing(note.id, note.description)}>
+                          Edit Notes
+                        </Button>
+                        <Button variant="outline-danger" onClick={() => this.deleteClick(note.id)}>Delete Notes</Button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+            </>
+          )}
+
+          {!token && (
+            <div className="login-container">
+              <h1>Login</h1>
+              <label htmlFor="usernameInput">Username:</label>
+              <input type="text" id="usernameInput" className="form-control" />
+              <br />
+              <label htmlFor="passwordInput">Password:</label>
+              <input type="password" id="passwordInput" className="form-control" />
+              <br />
+              <Button variant="outline-primary" onClick={() => this.login()}>Login</Button>
+              <Button variant="outline-success" onClick={() => this.register()}>Register</Button>
+            </div>
+          )}
+        </Container>
       </div>
     );
   }
