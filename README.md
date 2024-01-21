@@ -12,9 +12,10 @@ CSS <br>
 Bootstrap<br>
 <br>
 ![1](https://github.com/jolanowak/notes/assets/122167686/e21cea35-7256-48dc-a0d9-cd7aa4f7f290)<br>
+![2](https://github.com/jolanowak/notes/assets/122167686/8e1a64dd-b1a6-4344-9f18-79082e9f1230)<br>
 ![4](https://github.com/jolanowak/notes/assets/122167686/a60313f0-310a-4e75-abc2-69c06d819bdd)<br>
 ![3](https://github.com/jolanowak/notes/assets/122167686/eb8948ff-7d54-4d15-b681-aa0c005b5910)<br>
-![2](https://github.com/jolanowak/notes/assets/122167686/8e1a64dd-b1a6-4344-9f18-79082e9f1230)<br>
+
 
 
 
