@@ -26,6 +26,7 @@ Node.js <br>
 Express.js <br>
 MongoDB <br>
 CSS <br>
+Bootstrap<br>
 Struktura Projektu <br>
 src/ - Źródłowy kod aplikacji React <br>
 components/ - Komponenty React <br>
